@@ -7,25 +7,31 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-      <h1>Instrumentos Musicales</h1>
-      <nav>
+    <header class="encabezado">
+      <div class="logo">🎵 Musical Store</div>
+      <nav class="navegacion">
         <a href="index.html">Inicio</a>
         <a href="productos.html">Productos</a>
         <a href="contacto.html">Contacto</a>
       </nav>
     </header>
   
-    <main>
-      <h2>Categorías</h2>
-      <button onclick="filtrar('guitarras')">Guitarras</button>
-      <button onclick="filtrar('pianos')">Pianos</button>
-      <button onclick="filtrar('baterias')">Baterías</button>
+    <main class="contenido">
+      <h2 class="titulo-seccion">Nuestros Productos</h2>
+      <div class="botones-categorias">
+        <button onclick="filtrar('guitarras')">Guitarras</button>
+        <button onclick="filtrar('pianos')">Pianos</button>
+        <button onclick="filtrar('baterias')">Baterías</button>
+      </div>
   
-      <div id="contenedor-productos">
-        <!-- Productos se insertan aquí con JS -->
+      <div id="contenedor-productos" class="grid-productos">
+        <!-- Productos se mostrarán aquí con JS -->
       </div>
     </main>
+  
+    <footer class="pie">
+      <p>&copy; 2025 Musical Store - Todos los derechos reservados</p>
+    </footer>
   
     <script src="js/scripts.js"></script>
   </body>

@@ -1,17 +1,164 @@
-body {
-    font-family: Arial, sans-serif;
+  /*******index***********/
+
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   
-  header {
-    background-color: #333;
-    color: white;
-    padding: 1em;
+  /* Estilo general */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
   }
   
-  nav a {
+  /* Encabezado */
+  .encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
     color: white;
-    margin: 0 1em;
+    padding: 1em 2em;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .navegacion a {
+    color: white;
+    margin-left: 1em;
     text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navegacion a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Sección portada */
+  .portada {
+    text-align: center;
+    padding: 4em 2em;
+    background-image: url('../img/guitarra.jpg'); /* Puedes reemplazar por tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+  }
+  
+  .portada h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .portada .boton {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.8em 1.5em;
+    background-color: #ffcc00;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .portada .boton:hover {
+    background-color: #e0b800;
+  }
+  
+  /* Pie de página */
+  .pie {
+    text-align: center;
+    background-color: #222;
+    color: #ccc;
+    padding: 1em;
+    margin-top: 2em;
+  }
+  
+
+  /*********************productos*********************/
+
+  .titulo-seccion {
+    text-align: center;
+    margin: 2em 0 1em;
+    font-size: 2em;
+  }
+  
+  .botones-categorias {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  .botones-categorias button {
+    padding: 0.7em 1.2em;
+    margin: 0.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .botones-categorias button:hover {
+    background-color: #555;
+  }
+  
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5em;
+    padding: 0 2em;
+  }
+  
+  .grid-productos div {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  /*********************contacto*********************/
+
+  .formulario-contacto {
+    max-width: 600px;
+    margin: 2em auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formulario-contacto label {
+    margin: 0.5em 0 0.2em;
+    font-weight: bold;
+  }
+  
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .formulario-contacto button {
+    margin-top: 1em;
+    padding: 0.8em;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formulario-contacto button:hover {
+    background-color: #333;
   }
