@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Musical store</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+      <h1>Instrumentos Musicales</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+  
+    <main>
+      <h2>Categorías</h2>
+      <button onclick="filtrar('guitarras')">Guitarras</button>
+      <button onclick="filtrar('pianos')">Pianos</button>
+      <button onclick="filtrar('baterias')">Baterías</button>
+  
+      <div id="contenedor-productos">
+        <!-- Productos se insertan aquí con JS -->
+      </div>
+    </main>
+  
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
